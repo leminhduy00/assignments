@@ -4,10 +4,10 @@ set -e
 WORKDIR=$(pwd)
 IMG_FILE="${WORKDIR}/licheepi-nano.img"
 
-UBOOT="${WORKDIR}/u-boot-sunxi-with-spl.bin"
-KERNEL="${WORKDIR}/zImage"
-DTB="${WORKDIR}/suniv-f1c100s-licheepi-nano.dtb"
-ROOTFS="${WORKDIR}/rootfs.tar"
+UBOOT="${WORKDIR}/prebuild-files/u-boot-sunxi-with-spl.bin"
+KERNEL="${WORKDIR}/prebuild-files/zImage"
+DTB="${WORKDIR}/prebuild-files/suniv-f1c100s-licheepi-nano.dtb"
+ROOTFS="${WORKDIR}/prebuild-files/rootfs.tar"
 
 BOOT_SIZE=16
 IMG_SIZE=128
