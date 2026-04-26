@@ -130,9 +130,7 @@ console=ttyS0,115200 panic=5 rootwait root=/dev/mmcblk0p2 earlyprintk rw
 
 Bootcmd (Enable a default value for bootcmd to be Y):
 ```
-load mmc 0:1 0x80008000 zImage;
-load mmc 0:1 0x80c08000 suniv-f1c100s-licheepi-nano.dtb;
-bootz 0x80008000 - 0x80c08000;
+load mmc 0:1 0x80008000 zImage; load mmc 0:1 0x80c08000 suniv-f1c100s-licheepi-nano.dtb; bootz 0x80008000 - 0x80c08000;
 ```
 ![Test](https://i.postimg.cc/W47YCrmJ/uboot.png)
 
@@ -158,10 +156,10 @@ File: u-boot-sunxi-with-spl.bin
 
 Before running the image generation script, put all generated output files into the prebuild-files folder:
 
-Buildroot root filesystem (rootfs.tar)
-Linux kernel (zImage)
-Device tree (suniv-f1c100s-licheepi-nano.dtb)
-U-Boot (u-boot-sunxi-with-spl.bin)
+- Buildroot root filesystem (rootfs.tar)
+- Linux kernel (zImage)
+- Device tree (suniv-f1c100s-licheepi-nano.dtb)
+- U-Boot (u-boot-sunxi-with-spl.bin)
 
 ## 2. Run image generation script
 
