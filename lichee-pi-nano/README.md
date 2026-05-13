@@ -149,9 +149,8 @@ File: u-boot-sunxi-with-spl.bin
 
 ---
 
-# Generate SD Card Image
-
-
+# Flashing the Image
+Write the generated image directly to the SD card.
 ## 1. Prepare input files
 
 Before running the image generation script, put all generated output files into the prebuild-files folder:
